@@ -1,0 +1,75 @@
+
+/* Se importa fuente de google font = Righteouse - Work Sans */
+
+@import url('https://fonts.googleapis.com/css2?family=Righteous&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    /* Colores principales */
+    --color-primary: #1e2326; /* Azul oscuro */
+    --color-secondar: #1cb698;/* Verde mar */
+    --color-tertiary: #ffffff;  /* Blanco */
+}
+
+*{
+    box-sizing: border-box;
+    font-family: 'Work Sans';
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    /* Me permite deslizar de una manera suave en todos los link internos de mi html*/
+    scroll-behavior: smooth;
+}
+
+/* MENU */
+.contenedor-header{
+    background-color: var(--color-primary);
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    z-index: 99;
+}
+.contenedor-header header{
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;    
+}
+.contenedor-header header .logo a{
+    font-family: 'Righteous';
+    font-size: 36px;
+    color:var(--color-secondar);
+    text-decoration: none;
+}
+.contenedor-header header ul{
+    display: flex;
+    list-style: none;    
+}
+.menu a{
+  color: aliceblue; 
+  text-decoration: none;
+  margin: 0px 15px;
+  padding: 3px;
+  transition: 0.5s ease;
+  color:var(--color-tertiary);
+}
+.menu a:hover{
+    color: var(--color-secondar);
+}
+.nav-responsive{
+    background-color: var(--color-secondar);
+    color: var(--color-tertiary);
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: none;
+}
+
+
+
+
+
