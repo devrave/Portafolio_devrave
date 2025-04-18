@@ -68,6 +68,79 @@ html{
     cursor: pointer;
     display: none;
 }
+/* SECCION INICIO */
+.inicio{
+   background: linear-gradient(to top, rgba(30,35,38,.8), rgba(30,35,38,1)),url(./assets/background.jpg);
+   background-size: cover;
+   height: 100vh;
+   color: var(--color-tertiary);
+   display: flex;
+   align-items: center;
+}
+
+.inicio .contenido-banner{
+    padding: 20px;
+    background-color: var(--color-primary);
+    max-width: 350px;
+    margin: auto;
+    text-align:center;
+    border-radius: 40px;
+}
+
+.inicio .contenido-banner img{
+    margin-top: 40px;
+    border: 10px solid var(--color-secondar);
+    display: block;
+    width: 80%;
+    margin: auto;    
+    border-radius: 100%;
+}
+.inicio .contenido-banner h1{
+    margin-top: 40px;
+    font-size: 42px;
+    font-family: 'Righteous';    
+}
+
+.inicio .contenido-banner h2{
+    font-size: 15px;
+    font-weight: normal;
+}
+
+.inicio .contenido-banner .redes{
+    display: flex;
+    gap:10px;
+    justify-content: center;
+}
+.inicio .contenido-banner .redes a{
+    color: var(--color-tertiary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid var(--color-tertiary);
+    border-radius: 100%;
+    width: 42px;
+    height: 42px;      
+    text-decoration: none;
+    margin: 40px 5px;
+    font-size: 20px;
+    transition: .3s;   
+    }
+
+.inicio .contenido-banner .redes a:hover{
+    background-color: var(--color-secondar);
+    transition: .6s;   
+
+}
+
+
+
+
+
+
+
+   
+
+
 
 
 
