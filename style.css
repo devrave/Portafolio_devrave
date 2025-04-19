@@ -6,6 +6,7 @@
 :root {
     /* Colores principales */
     --color-primary: #1e2326; /* Azul oscuro */
+    --color-primary-two: #252A2E; /* Azul oscuro */
     --color-secondar: #1cb698;/* Verde mar */
     --color-tertiary: #ffffff;  /* Blanco */
 }
@@ -128,9 +129,112 @@ html{
 
 .inicio .contenido-banner .redes a:hover{
     background-color: var(--color-secondar);
-    transition: .6s;   
+    transition: .6s;
+}
+.sobremi{
+    background-color: var(--color-primary);
+    color: var(--color-tertiary);
+    padding: 50px 20px;
+}
+.sobremi .contenido-seccion{
+    max-width: 1100px;
+    margin: auto;
+}
+.sobremi h2{
+    font-size: 48px;
+    font-family: 'Righteous';
+    text-align: center;
+    padding: 20px 0;
+}
+.sobremi .contenido-seccion p{
+    font-size: 18px;
+    line-height: 22px;
+    margin-bottom: 20px;
+}
+.sobremi .contenido-seccion p span{
+    color: var(--color-secondar);
+    font-weight: bold;   
+}
+.sobremi .fila{
+    display: flex;
 
 }
+.sobremi .fila .col{
+    width: 50%;
+}
+.sobremi .fila .col h3{
+    font-size: 28px;
+    font-family:'Righteous';
+}
+.sobremi .fila .col ul{
+    list-style: none;
+}
+.sobremi .fila .col ul li{
+    margin: 12px 0px;
+}
+.sobremi .fila li strong{
+  display: inline-block;  
+  color: var(--color-secondar);
+  width: 130px;  
+}
+.sobremi .fila li span{
+    background-color: var(--color-secondar);
+    padding: 3px;
+    font-weight: bold;
+    border-radius: 5px;
+}
+.sobremi .fila .col .contenedor-intereses{
+    display: flex;
+    flex-wrap: wrap;
+}
+.sobremi .fila .col .interes{
+    width: 110px;
+    height: 110px;
+    background-color: var(--color-primary-two);
+    border-radius: 10px;
+    margin: 0px 15px 15px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: .3s
+}
+.sobremi .fila .col .interes:hover{
+    background-color: var(--color-secondar);
+}
+.sobremi .fila .col .interes i{
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+.sobremi button{
+    cursor: pointer;
+    background-color: transparent;
+    border: 2px solid var(--color-tertiary);
+    display: block;
+    margin: 25px auto;
+    padding: 10px 22px;
+    font-size: 16px;
+    color: var(--color-tertiary);
+    position: relative;
+    z-index: 10;
+    transition: .3s;
+}
+.sobremi button .overlay{
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 0;    
+    height:100% ;
+    background-color: var(--color-secondar);
+    z-index: -1;
+    transition: 1s;
+}
+.sobremi button:hover .overlay{
+    width: 100%;
+}
+
+
+
 
 
 
