@@ -233,6 +233,9 @@ html{
 .sobremi button:hover .overlay{
     width: 100%;
 }
+.sobremi .cv{
+    text-decoration: none;
+}
 /*  SECCION S K I L L S */
 .skills{
     background-color: var(--color-primary-two);
@@ -333,7 +336,7 @@ html{
 }
 @keyframes comunicacion{
     0%{width: 0%}
-    100%{width: 62%}    
+    100%{width: 87%}    
 }
 .skills .skill .trabajo{
     width: 0%;
@@ -341,7 +344,7 @@ html{
 }
 @keyframes trabajo{
     0%{width: 0%}
-    100%{width: 62%}    
+    100%{width: 92%}    
 }
 .skills .skill .metodologias{
     width: 0%;
@@ -349,7 +352,7 @@ html{
 }
 @keyframes metodologias{
     0%{width: 0%}
-    100%{width: 62%}    
+    100%{width: 80%}    
 }
 .skills .skill .resolucion{
     width: 0%;
@@ -357,7 +360,7 @@ html{
 }
 @keyframes resolucion{
     0%{width: 0%}
-    100%{width: 62%}    
+    100%{width: 83%}    
 }
 /* SECCION P O R T A F O L I O */
 .portafolio{
@@ -477,20 +480,25 @@ html{
 .contacto button:hover .overlay{
     width: 100%;
 }
-.contacto .col iframe{
+.contacto button i{
+    margin-left: 5px;
+}
+.contacto .col img{
     width: 100%;
 }
 .contacto .col .info{
     position: absolute;
-    top:40%;
+    top:80%;
     background-color: var(--color-primary-two);
     padding: 20px;
     max-width: 350px;
-    left: 50%;
+    left: 59%;
     transform: translate(-50%, -50%);
+    opacity: 0.9;
 }
 .contacto .col .info ul{
-    list-style: none;    
+    list-style: none;  
+    width: 300px;  
 }
 .contacto .col .info ul li{
     margin-bottom: 20px;    
@@ -526,6 +534,12 @@ footer .redes a{
     font-size: 20px;
     transition: .3s; 
 }
+
+footer .redes a:hover{
+    background-color: var(--color-secondar);
+    transition: .6s;
+}
+
 footer .arriba{
     display: block;
     width: 50px;
@@ -585,10 +599,22 @@ footer .arriba{
     
     .portafolio .galeria{
         display: block;
-        width: 100%;
+        
     }
     .portafolio .galeria .proyecto{
-        
+        max-width: 60%;
+        margin: auto;
+    }
+    .portafolio .galeria .proyecto img{
+        width: 100%;   
+        margin-top: 10px;     
+    }
+    .contacto .fila{
+        display: block;
+    }
+    .contacto .fila .col{
+        width: 100%;
+
     }
 }
 

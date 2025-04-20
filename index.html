@@ -19,14 +19,14 @@
             </div>
             <nav id="nav">
                 <ul class="menu">
-                    <li><a href="#inicio">INICIO</a></li>
-                    <li><a href="#sobremi">SOBRE MI</a></li>
-                    <li><a href="#skills">SKILLS</a></li>                  
-                    <li><a href="#portafolio">PORTAFOLIO</a></li>
-                    <li><a href="#contacto">CONTACTO</a></li>
+                    <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+                    <li><a href="#sobremi" onclick="seleccionar()" >SOBRE MI</a></li>
+                    <li><a href="#skills" onclick="seleccionar()">SKILLS</a></li>                  
+                    <li><a href="#portafolio" onclick="seleccionar()">PORTAFOLIO</a></li>
+                    <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
                 </ul>
             </nav>
-            <div class="nav-responsive">
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
                 <i class="fa-solid fa-bars"></i>
             </div>
         </header>
@@ -42,9 +42,9 @@
             <h1>ANDRES CANO</h1>
             <h2>Desarrollador FullStack</h2>
             <div class="redes">
-                <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
-                <a href="#"><i class="fa-brands fa-github"></i></a>
-                <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+                <a href="https://www.linkedin.com/in/andres-cano-rave-backend-java-springboot/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="https://github.com/devrave" target="_blank"><i class="fa-brands fa-github"></i></a>
+                <a href="https://wa.me/573052347042?text=Hola%2C%20quiero%20contactarte" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
             </div>            
         </div>
     </section>
@@ -103,10 +103,12 @@
                     </div>
                  </div>
             </div>
-            <button>
-                Descargar CV <i class="fa-solid fa-download"></i>
-                <span class="overlay"></span>
-            </button>            
+            <a class="cv" href="/assets/mi_cv.pdf" download>
+                <button>
+                    Descargar CV <i class="fa-solid fa-download"></i>
+                    <span class="overlay"></span>
+                </button>
+            </a>      
         </div>
     </section>
     <!-- SECCION SKILLS -->
@@ -218,7 +220,6 @@
                 </div>
             </div>
         </div>
-
      </section>
      <!-- SECCION CONTACTO -->
      <section id="contacto" class="contacto">
@@ -239,7 +240,7 @@
                 </div>
                 <!-- Mapa -->
                 <div class="col">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.7931491864238!2d-75.62735192432099!3d6.158452327296414!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e46817ce9f08c13%3A0x6c2b11367edea21!2sCl.%2022a%20%23%2050B-66%2C%20La%20Florida%2C%20Itag%C3%BCi%2C%20Antioquia!5e0!3m2!1ses-419!2sco!4v1745101991644!5m2!1ses-419!2sco" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <img src="/assets/Location review-bro.png" alt="">
                     <div class="info">
                         <ul>
                             <li>
@@ -252,7 +253,7 @@
                             </li>
                             <li>
                                 <i class="fa-solid fa-envelope"></i>
-                                Emil: a.canorave@gmail.com
+                                Email: a.canorave@gmail.com
                             </li>
                         </ul>
                     </div>
@@ -266,10 +267,12 @@
             <i class="fa-solid fa-angles-up"></i>
           </a>
           <div class="redes">
-            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
-            <a href="#"><i class="fa-brands fa-github"></i></a>
-            <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
-        </div>  
+            <a href="https://www.linkedin.com/in/andres-cano-rave-backend-java-springboot/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="https://github.com/devrave" target="_blank"><i class="fa-brands fa-github"></i></a>
+            <a href="https://wa.me/573052347042?text=Hola%2C%20quiero%20contactarte" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+        </div>            
       </footer>
+      <!-- Script java -->
+      <script src="./script.js"></script>
     </body>
 </html>
