@@ -38,3 +38,38 @@ function efectoHabilidades(){
 window.onscroll = function(){
     efectoHabilidades();
 } 
+
+// Inicializar EmailJS
+emailjs.init("V6VSfKI3GXsVgnh8A"); // Reemplaza con tu User ID real
+
+// Lógica del formulario
+document.getElementById('formulario-contacto').addEventListener('submit', function(e) {
+    e.preventDefault();
+
+    const nombre = this.nombre.value.trim();
+    const telefono = this.telefono.value.trim();
+    const correo = this.correo.value.trim();
+    const tema = this.tema.value.trim();
+    const mensaje = this.mensaje.value.trim();
+
+    console.log({
+        nombre, telefono, correo, tema, mensaje
+    });
+    
+
+
+    // Enviar el formulario usando EmailJS
+    emailjs.send("service_portafolio", "template_e7fudra", {
+        nombre: nombre,
+        telefono: telefono,
+        correo: correo,
+        tema: tema,
+        mensaje: mensaje
+    }).then(function(response) {
+        alert("¡Mensaje enviado con éxito!");
+        document.getElementById('formulario-contacto').reset();
+    }, function(error) {
+        console.error("Error:", error);
+        alert("Hubo un error al enviar el mensaje. Intenta nuevamente.");
+    });
+});

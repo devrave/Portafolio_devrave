@@ -7,7 +7,7 @@
     /* Colores principales */
     --color-primary: #1e2326; /* Azul oscuro */
     --color-primary-two: #252A2E; /* Azul oscuro */
-    --color-secondar: #1cb698;/* Verde mar */
+    --color-secondar: #278a8a;/* Verde */
     --color-tertiary: #ffffff;  /* Blanco */
 }
 
@@ -45,6 +45,7 @@ html{
     font-size: 36px;
     color:var(--color-secondar);
     text-decoration: none;
+    cursor:none;
 }
 .contenedor-header header ul{
     display: flex;
@@ -401,7 +402,7 @@ html{
     width: 100%;
     height: 100%;
     text-align: center;
-    background: linear-gradient(rgba(28,182,152,.8)), rgba(28,182,152,.8);
+    background: linear-gradient(rgba(39, 138, 138,.8)), rgba(39, 138, 138,.8);
     display: flex;    
     flex-direction: column;
     justify-content: center;
@@ -453,6 +454,7 @@ html{
     background-color: var(--color-primary-two);
     color: var(--color-tertiary);
     font-size: 18px;
+    resize: none;
 }
 .contacto button{
     cursor: pointer;
