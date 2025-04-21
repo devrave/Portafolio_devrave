@@ -4,6 +4,19 @@ Este es mi portafolio personal como **Desarrollador Full Stack**, donde muestro 
 
 ---
 
+## Estructura del proyecto
+
+📦 portafolio/
+ ┣ 📁 assets/
+ ┃ ┣ 📄 AndresCanoProfile.jpg
+ ┃ ┗ 📄 preview.jpg
+ ┣ 📄 index.html
+ ┣ 📄 style.css
+ ┣ 📄 script.js
+ ┗ 📄 README.md
+
+---
+
 ## 📸 Vista previa
 
 ![Vista previa del portafolio](./assets/preview.png) <!-- Cambia esto por una imagen real de preview -->
