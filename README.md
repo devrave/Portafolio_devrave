@@ -4,6 +4,12 @@ Este es mi portafolio personal como **Desarrollador Full Stack**, donde muestro 
 
 ---
 
+## 📸 Vista previa
+
+![Vista previa del portafolio](./assets/preview.png) 
+
+---
+
 ## Estructura del proyecto
 
 📦 portafolio/
@@ -17,9 +23,14 @@ Este es mi portafolio personal como **Desarrollador Full Stack**, donde muestro 
 
 ---
 
-## 📸 Vista previa
+## 🛠️ Flujo de Trabajo con Ramas
 
-![Vista previa del portafolio](./assets/preview.png) <!-- Cambia esto por una imagen real de preview -->
+Durante el desarrollo del proyecto, se siguió una estructura de ramas sencilla pero efectiva:
+
+- `dev`: Rama principal de desarrollo. Aquí se implementaron, probaron y ajustaron todas las funcionalidades antes de ser consideradas estables.
+- `main`: Rama destinada a producción. Solo se fusionaron a esta rama los cambios previamente validados en `dev`.
+
+Este enfoque permitió mantener el código de producción limpio y libre de errores, facilitando el control de versiones y la colaboración durante el desarrollo.
 
 ---
 
