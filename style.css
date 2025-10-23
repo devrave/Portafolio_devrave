@@ -234,6 +234,10 @@ html{
 .sobremi button:hover .overlay{
     width: 100%;
 }
+
+
+
+
 .sobremi .cv{
     text-decoration: none;
 }
@@ -304,7 +308,7 @@ html{
 }
 @keyframes javascript {
     0%{width: 0%}
-    100%{width: 75%}    
+    100%{width: 70%}    
 }
 .skills .skill .java{
     width: 0%;
@@ -313,15 +317,35 @@ html{
 
 @keyframes java {
     0%{width: 0%}
-    100%{width: 65%}    
+    100%{width: 75%}    
 }
+.skills .skill .sql{
+    width: 0%;
+    animation: 2s sql forwards;
+}
+
+@keyframes sql {
+    0%{width: 0%}
+    100%{width: 80%}    
+}
+
+.skills .skill .scrum{
+    width: 0%;
+    animation: 2s scrum forwards;
+}
+@keyframes scrum {
+    0%{width: 0%}
+    100%{width: 90%}    
+}
+
 .skills .skill .htmlcss{
     width: 0%;
     animation: 2s htmlcss forwards;
 }
+
 @keyframes htmlcss{
     0%{width: 0%}
-    100%{width: 76%}    
+    100%{width: 75%}    
 }
 .skills .skill .gitGithub{
     width: 0%;
@@ -329,7 +353,7 @@ html{
 }
 @keyframes gitGithub{
     0%{width: 0%}
-    100%{width: 62%}    
+    100%{width: 65%}    
 }
 .skills .skill .comunicacion{
     width: 0%;
@@ -352,6 +376,14 @@ html{
     animation: 2s metodologias forwards;
 }
 @keyframes metodologias{
+    0%{width: 0%}
+    100%{width: 85%}    
+}
+.skills .skill .gestion{
+    width: 0%;
+    animation: 2s gestion forwards;
+}
+@keyframes gestion{
     0%{width: 0%}
     100%{width: 80%}    
 }
@@ -409,17 +441,45 @@ html{
     transition: 1s;
     font-size: 18px;
     opacity: 0; 
+    align-content: center;
+    align-items: center;
+    align-content: center;
+    align-items: center;
+    
 }
 .portafolio .galeria .proyecto .overlay h3{
-    margin-bottom: 20px;
-    transition: 1s;
+    margin-bottom: 30px;
+    
 }
 .portafolio .galeria .proyecto .overlay:hover{
     opacity: 0.93;
+    
 }
 .portafolio .galeria .proyecto .overlay:hover h3{
-    margin-bottom: 4px;
+    margin-bottom: 10px;
 }
+
+.overlay:hover {
+    border: 1px solid var(--color-tertiary);    
+    width: 42px;
+    height: 42px;      
+    text-decoration: none;
+    font-size: 20px;
+    transition: 1s;  
+}
+.overlay a{
+    border: 1px solid var(--color-tertiary); 
+    color:var(--color-tertiary);
+    border-radius: 100%;
+    width: 42px;
+    height: 42px;      
+    text-decoration: none;   
+    align-items: center;
+    align-content: center;
+
+}
+
+
 /* SECCION C O N T A C T O */
 .contacto{
     background-image: url(assets/contact_world.png);
